@@ -10,9 +10,8 @@ import { IoExitOutline } from "react-icons/io5";
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="w-20 p-1 bg-gray-100 dark:bg-gray-900 flex flex-col h-full border-solid border-0 border-indigo-600 hidden md:block">
-      <div className="grid grid-cols-12 gap-4 h-full">
-        {/* Top section */}
+    <div className="w-20 p-1 bg-gray-100 dark:bg-gray-900 flex flex-col border-solid border-0 border-indigo-600 hidden md:block ">
+      <div className="grid grid-cols-12 gap-4">
         <div className="flex flex-col space-y-4">
           <button className="p-0 bg-gray-300 dark:bg-gray-700 rounded"><MdAppsOutage size={30} /></button>
           <button className="p-0 bg-gray-300 dark:bg-gray-700 rounded"><IoCar size={30} /></button>
@@ -20,8 +19,7 @@ const Sidebar: React.FC = () => {
           <button className="p-0 bg-gray-300 dark:bg-gray-700 rounded"><IoHeartOutline size={30} /></button>
         </div>
 
-        {/* Bottom section */}
-        <div className="flex flex-col space-y-4 mt-[675px]">
+        <div className="flex flex-col space-y-4 mt-[555px]">
           <button className="p-0 bg-gray-300 dark:bg-gray-700 rounded"><FaRegBell size={30} /></button>
           <button className="p-0 bg-gray-300 dark:bg-gray-700 rounded"><FaRegCircleQuestion size={30} /></button>
           <button className="p-0 bg-gray-300 dark:bg-gray-700 rounded"><IoSettingsOutline size={30} /></button>

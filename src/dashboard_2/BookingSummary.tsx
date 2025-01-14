@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const BookingSummary: React.FC = () => {
-  // Define state for pick-up and drop-off times
   const [pickup, setPickup] = useState('2023-12-10T08:00');
   const [dropoff, setDropoff] = useState('2023-12-10T14:00');
 

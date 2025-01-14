@@ -43,7 +43,7 @@ const CarCard: React.FC<CarCardProps> = ({
       <img
         src={image}
         alt={`${make} ${model}`}
-        className="w-full h-[150px] object-cover rounded-md"
+        className="w-full h-[130px] object-cover rounded-md"
       />
       <div className="mt-3">
         <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 truncate">

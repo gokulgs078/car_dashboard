@@ -11,7 +11,7 @@ const Destination: React.FC = () => {
         <div className="border-solid border-2xl border-green-600 bg-gray-300 h-full">
           <CarImage />
         </div>
-        <div className="border-solid border-2xl border-red-600 bg-gray-300 h-full">
+        <div className="border-solid border-2xl border-red-600 bg-gray-300">
           <CarDetails />
         </div>
       </div>

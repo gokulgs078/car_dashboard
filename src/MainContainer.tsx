@@ -6,13 +6,13 @@ import Destination from './dashboard_2/Destination.tsx';
 
 const MainContainer: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div className="flex flex-col bg-gray-100 dark:bg-gray-900 ">
       <Header />
-      <div className="flex flex-1 p-0 h-[100vh]">
+      <div className="flex flex-1 p-0">
         <Sidebar />
         <div className="flex-grow flex flex-col md:flex-row">
-          <Navigation />
-          {/* <Destination /> */}
+          {/* <Navigation /> */}
+          <Destination />
         </div>
       </div>
     </div>
