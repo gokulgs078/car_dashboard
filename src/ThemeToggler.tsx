@@ -11,7 +11,6 @@ const ThemeToggler: React.FC = () => {
     dispatch(toggleTheme());
   };
 
-  // Apply the theme to the html element
   useEffect(() => {
     const root = document.documentElement;
     if (theme === "dark") {
