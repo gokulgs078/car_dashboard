@@ -11,8 +11,8 @@ const MainContainer: React.FC = () => {
       <div className="flex flex-1 p-0">
         <Sidebar />
         <div className="flex-grow flex flex-col md:flex-row">
-          {/* <Navigation /> */}
-          <Destination />
+          <Navigation />
+          {/* <Destination /> */}
         </div>
       </div>
     </div>
