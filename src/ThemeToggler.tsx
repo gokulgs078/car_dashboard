@@ -21,13 +21,22 @@ const ThemeToggler: React.FC = () => {
   }, [theme]);
 
   return (
-    <button
-      onClick={handleToggle}
-      className="px-4 py-2 rounded focus:outline-none transition-colors 
-                 bg-gray-200 dark:bg-gray-600 text-black dark:text-white"
-    >
-      {theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
-    </button>
+    <div className="flex items-center justify-center">
+      <div
+        className="w-20 md:w-36 h-10 bg-gray-300 dark:bg-gray-800 rounded-full p-1 flex items-center cursor-pointer transition-all"
+        onClick={handleToggle}
+      >
+        <div
+          className={`h-8 w-8 md:w-20 flex items-center justify-center text-sm font-semibold rounded-full bg-white transition-all ${
+            theme === "light" ? "ml-0 text-black" : "ml-auto text-black"
+          }`}
+        >
+          {/* Show text for desktop and icon for mobile */}
+          <span className="hidden md:block">{theme === "light" ? "Light Mode" : "Dark"}</span>
+          <span className="block md:hidden">{theme === "light" ? "☀️" : "🌙"}</span>
+        </div>
+      </div>
+    </div>
   );
 };
 

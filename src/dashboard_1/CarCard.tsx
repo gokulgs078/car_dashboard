@@ -19,29 +19,20 @@ interface CarCardProps {
 }
 
 const CarCard: React.FC<CarCardProps> = ({
-  id,
   make,
   model,
   year,
-  color,
-  mileage,
   price,
-  fuelType,
-  transmission,
-  engine,
-  horsepower,
-  features,
-  owners,
   image,
   onClick,
 }) => {
   return (
     <div 
       onClick={onClick} 
-      className="border rounded-lg shadow-md p-3 bg-orange-200 dark:bg-gray-800 h-full cursor-pointer"
+      className="border rounded-lg shadow-md p-3 bg-orange-200 dark:bg-gray-800 h-full cursor-pointer hover:scale-105 transition-transform"
     >
       <img
-        src={image}
+        src={image || '/default-car.jpg'}
         alt={`${make} ${model}`}
         className="w-full h-[130px] object-cover rounded-md"
       />
