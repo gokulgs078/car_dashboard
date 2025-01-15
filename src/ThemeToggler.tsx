@@ -22,7 +22,7 @@ const ThemeToggler: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center">
-      {/* Mobile view: show only a moon icon */}
+      
       <div className="block md:hidden">
         <button
           onClick={handleToggle}
@@ -32,9 +32,9 @@ const ThemeToggler: React.FC = () => {
         </button>
       </div>
 
-      {/* Desktop view: show full toggle switch */}
+      
       <div
-        className="hidden md:flex w-36 h-10 bg-gray-300 dark:bg-gray-800 rounded-full p-1 cursor-pointer items-center transition-all"
+        className="hidden md:flex w-36 h-10 bg-gray-300 dark:bg-black-800 rounded-full p-1 cursor-pointer items-center transition-all"
         onClick={handleToggle}
       >
         <div

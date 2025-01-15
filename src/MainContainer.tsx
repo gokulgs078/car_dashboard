@@ -23,7 +23,7 @@ const MainContainer: React.FC = () => {
           <Sidebar />
         </div>
         <div className="flex-grow">
-          {/* Show Destination if a car is selected, otherwise show Navigation */}
+          
           {selectedCar ? <Destination /> : <Navigation />}
         </div>
       </div>

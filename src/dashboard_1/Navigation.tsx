@@ -8,7 +8,7 @@ const Navigation: React.FC = () => {
       <div className="w-fit md:w-96 p-6 bg-gray-100 rounded-xl h-[737px]">
         <Filters />
       </div>
-      <div className="flex-grow p-4 h-[737px] overflow-y-scroll">
+      <div className="flex-grow p-6 h-[737px] overflow-y-scroll">
         <CarList />
       </div>
     </div>

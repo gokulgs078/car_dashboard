@@ -11,7 +11,7 @@ const Destination: React.FC = () => {
   const dispatch = useDispatch();
 
   const handleBackClick = () => {
-    dispatch(clearSelectedCar()); // Clear selected car to show the car list (Navigation).
+    dispatch(clearSelectedCar()); 
   };
 
   if (!selectedCar) {
@@ -23,10 +23,9 @@ const Destination: React.FC = () => {
       <div className="flex flex-col gap-6">
         <div className="border-solid border-2xl border-green-600 bg-white h-full relative shadow-md rounded-lg">
           <div className="flex items-center p-4 bg-white rounded-t-lg">
-            {/* Back Button */}
             <button
               className="mr-4 p-2 rounded-full hover:bg-gray-200"
-              onClick={handleBackClick} // Dispatch the back action
+              onClick={handleBackClick} 
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

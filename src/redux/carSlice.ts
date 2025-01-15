@@ -1,11 +1,11 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface CarState {
-  selectedCar: any | null; // Holds the selected car's data
+  selectedCar: any | null; 
 }
 
 const initialState: CarState = {
-  selectedCar: null, // Null means no car is selected, i.e., show Navigation.
+  selectedCar: null, 
 };
 
 const carSlice = createSlice({
@@ -13,10 +13,10 @@ const carSlice = createSlice({
   initialState,
   reducers: {
     setSelectedCar: (state, action: PayloadAction<any>) => {
-      state.selectedCar = action.payload; // Set the selected car.
+      state.selectedCar = action.payload; 
     },
     clearSelectedCar: (state) => {
-      state.selectedCar = null; // Clear the selected car to show the car list.
+      state.selectedCar = null; 
     },
   },
 });

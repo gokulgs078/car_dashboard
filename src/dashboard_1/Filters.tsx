@@ -5,7 +5,6 @@ const Filters: React.FC = () => {
 
   const resetFilters = () => {
     setAvailableNow(false);
-    // Reset other filter states as needed
   };
 
   return (
@@ -21,7 +20,6 @@ const Filters: React.FC = () => {
       </div>
 
       <div className="mt-4 space-y-6">
-        {/* Car Brand and Model */}
         <div className="flex space-x-4">
           <label className="block w-full">
             <span className="text-gray-600 dark:text-gray-400">Car Brand</span>
@@ -41,7 +39,6 @@ const Filters: React.FC = () => {
           </label>
         </div>
 
-        {/* Car Type */}
         <div>
           <label className="block text-gray-600 dark:text-gray-400">Type</label>
           <div className="grid grid-cols-3 gap-4">
@@ -53,7 +50,6 @@ const Filters: React.FC = () => {
           </div>
         </div>
 
-        {/* Color Options (3 in a Row) */}
         <div>
           <label className="block text-gray-600 dark:text-gray-400">Color</label>
           <div className="grid grid-cols-3 gap-4 mt-2">
@@ -78,7 +74,6 @@ const Filters: React.FC = () => {
           </div>
         </div>
 
-        {/* Available Now Toggle */}
         <div className="flex justify-between items-center mt-4">
           <span className="text-gray-600 dark:text-gray-400">Available now only</span>
           <label className="relative inline-block w-12 h-6">
@@ -101,7 +96,6 @@ const Filters: React.FC = () => {
           </label>
         </div>
 
-        {/* Rental Type */}
         <div>
           <label className="block text-gray-600 dark:text-gray-400">Rental Type</label>
           <div className="flex gap-4 mt-2">
@@ -115,7 +109,6 @@ const Filters: React.FC = () => {
           </div>
         </div>
 
-        {/* Car Insurance */}
         <div>
           <label className="block text-gray-600 dark:text-gray-400">Car Insurance</label>
           <div className="grid grid-cols-2 gap-4 mt-2">

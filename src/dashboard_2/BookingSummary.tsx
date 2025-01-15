@@ -21,8 +21,8 @@ const BookingSummary: React.FC<BookingSummaryProps> = ({ car }) => {
       setTotalTime(hours);
 
       const basePrice = car.price * hours;
-      const insurance = car.insuranceCost || 60; // Default insurance cost if not provided
-      const taxes = basePrice * 0.1; // 10% tax
+      const insurance = car.insuranceCost || 60; 
+      const taxes = basePrice * 0.1; 
 
       setTotalPrice(basePrice + taxes + insurance);
     }
@@ -32,7 +32,6 @@ const BookingSummary: React.FC<BookingSummaryProps> = ({ car }) => {
 
   return (
     <div className="bg-black text-white rounded-lg p-6 h-full">
-      {/* <h3 className="text-xl font-semibold">Pick-up and Drop-off</h3> */}
       <div className="flex justify-between mt-4">
         <div>
           <p className="text-white-400">Pick-up date and time</p>

@@ -35,7 +35,7 @@ const CarList: React.FC = () => {
   }, []);
 
   const handleCarClick = (car: Car) => {
-    dispatch(setSelectedCar(car)); // Dispatch selected car to Redux store
+    dispatch(setSelectedCar(car));
   };
 
   return (
