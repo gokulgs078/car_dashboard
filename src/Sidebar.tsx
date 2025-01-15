@@ -35,32 +35,32 @@ const Sidebar: React.FC = () => {
       <div className="flex flex-col space-y-8">
         
         <div className="flex flex-col space-y-4">
-          <button className="flex items-center justify-center p-2 bg-gray-300 dark:bg-gray-700 rounded">
+          <button className="flex items-center justify-center p-2 dark:bg-gray-700 rounded">
             <MdAppsOutage size={30} className="text-gray-800 dark:text-white" />
           </button>
-          <button className="flex items-center justify-center p-2 bg-gray-300 dark:bg-gray-700 rounded">
+          <button className="flex items-center justify-center p-2 dark:bg-gray-700 rounded">
             <IoCar size={30} className="text-gray-800 dark:text-white" />
           </button>
-          <button className="flex items-center justify-center p-2 bg-gray-300 dark:bg-gray-700 rounded">
+          <button className="flex items-center justify-center p-2 dark:bg-gray-700 rounded">
             <SlCalender size={30} className="text-gray-800 dark:text-white" />
           </button>
-          <button className="flex items-center justify-center p-2 bg-gray-300 dark:bg-gray-700 rounded">
+          <button className="flex items-center justify-center p-2 dark:bg-gray-700 rounded">
             <IoHeartOutline size={30} className="text-gray-800 dark:text-white" />
           </button>
         </div>
 
         
         <div className="flex flex-col space-y-4 absolute top-[455px]">
-          <button className="flex items-center justify-center p-2 bg-gray-300 dark:bg-gray-700 rounded">
+          <button className="flex items-center justify-center p-2 dark:bg-gray-700 rounded">
             <FaRegBell size={30} className="text-gray-800 dark:text-white" />
           </button>
-          <button className="flex items-center justify-center p-2 bg-gray-300 dark:bg-gray-700 rounded">
+          <button className="flex items-center justify-center p-2 dark:bg-gray-700 rounded">
             <FaRegCircleQuestion size={30} className="text-gray-800 dark:text-white" />
           </button>
-          <button className="flex items-center justify-center p-2 bg-gray-300 dark:bg-gray-700 rounded">
+          <button className="flex items-center justify-center p-2 dark:bg-gray-700 rounded">
             <IoSettingsOutline size={30} className="text-gray-800 dark:text-white" />
           </button>
-          <button className="flex items-center justify-center p-2 bg-gray-300 dark:bg-gray-700 rounded">
+          <button className="flex items-center justify-center p-2 dark:bg-gray-700 rounded">
             <IoExitOutline size={30} className="text-gray-800 dark:text-white" />
           </button>
         </div>

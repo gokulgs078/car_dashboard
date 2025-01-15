@@ -32,22 +32,22 @@ const BookingSummary: React.FC<BookingSummaryProps> = ({ car }) => {
 
   return (
     <div className="bg-black text-white rounded-lg p-6 h-full">
-      <h3 className="text-xl font-semibold">Pick-up and Drop-off</h3>
+      {/* <h3 className="text-xl font-semibold">Pick-up and Drop-off</h3> */}
       <div className="flex justify-between mt-4">
         <div>
-          <p className="text-gray-400">Pick-up:</p>
+          <p className="text-white-400">Pick-up date and time</p>
           <input
             type="datetime-local"
-            className="font-bold border border-gray-300 rounded px-2 py-1 text-black"
+            className="font-bold border border-gray-300 rounded px-2 py-1 text-white bg-gray-600"
             value={pickup}
             onChange={(e) => setPickup(e.target.value)}
           />
         </div>
         <div>
-          <p className="text-gray-400">Drop-off:</p>
+          <p className="text-white-400">Drop-off date and time</p>
           <input
             type="datetime-local"
-            className="font-bold border border-gray-300 rounded px-2 py-1 text-black"
+            className="font-bold border border-gray-300 rounded px-2 py-1 text-white bg-gray-600"
             value={dropoff}
             onChange={(e) => setDropoff(e.target.value)}
           />
@@ -62,9 +62,11 @@ const BookingSummary: React.FC<BookingSummaryProps> = ({ car }) => {
         <p className="text-gray-400 flex justify-between">
           Price: <span className="font-bold">${(car.price * totalTime).toFixed(2)}</span>
         </p>
+        <hr className="my-4 border-gray-600" />
         <p className="text-gray-400 flex justify-between">
           Taxes (10%): <span className="font-bold">${((car.price * totalTime) * 0.1).toFixed(2)}</span>
         </p>
+        <hr className="my-4 border-gray-600" />
         <p className="text-gray-400 flex justify-between">
           Insurance: <span className="font-bold">${car.insuranceCost || 60}</span>
         </p>
