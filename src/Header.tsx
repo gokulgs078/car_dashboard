@@ -27,7 +27,7 @@ const Header: React.FC = () => {
       </div>
 
       <div className="flex items-center space-x-4">
-        <div className="px-3 py-1 bg-gray-200 dark:bg-gray-600 rounded">
+        <div className="absolute left-1/2 -translate-x-1/2">
           <ThemeToggler />
         </div>
         <div className="text-gray-800 dark:text-white">New York, US</div>

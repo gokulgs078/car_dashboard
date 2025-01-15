@@ -50,7 +50,7 @@ const Sidebar: React.FC = () => {
         </div>
 
         
-        <div className="flex flex-col space-y-4 mt-[555px]">
+        <div className="flex flex-col space-y-4 absolute top-[455px]">
           <button className="flex items-center justify-center p-2 bg-gray-300 dark:bg-gray-700 rounded">
             <FaRegBell size={30} className="text-gray-800 dark:text-white" />
           </button>

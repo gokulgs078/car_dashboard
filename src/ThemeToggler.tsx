@@ -22,18 +22,27 @@ const ThemeToggler: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center">
+      {/* Mobile view: show only a moon icon */}
+      <div className="block md:hidden">
+        <button
+          onClick={handleToggle}
+          className="h-8 w-8 rounded-full bg-gray-300 dark:bg-gray-800 flex items-center justify-center transition-colors"
+        >
+          <span className="text-xl">🌙</span>
+        </button>
+      </div>
+
+      {/* Desktop view: show full toggle switch */}
       <div
-        className="w-20 md:w-36 h-10 bg-gray-300 dark:bg-gray-800 rounded-full p-1 flex items-center cursor-pointer transition-all"
+        className="hidden md:flex w-36 h-10 bg-gray-300 dark:bg-gray-800 rounded-full p-1 cursor-pointer items-center transition-all"
         onClick={handleToggle}
       >
         <div
-          className={`h-8 w-8 md:w-20 flex items-center justify-center text-sm font-semibold rounded-full bg-white transition-all ${
+          className={`h-8 w-20 flex items-center justify-center text-sm font-semibold rounded-full bg-white transition-all ${
             theme === "light" ? "ml-0 text-black" : "ml-auto text-black"
           }`}
         >
-          {/* Show text for desktop and icon for mobile */}
-          <span className="hidden md:block">{theme === "light" ? "Light Mode" : "Dark"}</span>
-          <span className="block md:hidden">{theme === "light" ? "☀️" : "🌙"}</span>
+          {theme === "light" ? "Light Mode" : "Dark"}
         </div>
       </div>
     </div>
