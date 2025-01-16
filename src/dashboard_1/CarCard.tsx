@@ -27,20 +27,27 @@ const CarCard: React.FC<CarCardProps> = ({
   onClick,
 }) => {
   return (
-    <div 
-      onClick={onClick} 
-      className="border rounded-lg shadow-md p-3 bg-orange-200 dark:bg-gray-800 h-full cursor-pointer hover:scale-105 transition-transform"
+    <div
+      onClick={onClick}
+      className="relative border rounded-lg shadow-md p-2 bg-orange-200 dark:bg-gray-800 h-[200px] cursor-pointer hover:scale-105 transition-transform"
     >
+      
       <img
         src={image || '/default-car.jpg'}
         alt={`${make} ${model}`}
         className="w-full h-[130px] object-cover rounded-md"
       />
+
+      
       <div className="mt-3">
         <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 truncate">
           {make} {model}, {year}
         </h3>
-        <p className="text-xs text-gray-500 dark:text-gray-400">Price: ${price}/hour</p>
+      </div>
+
+      
+      <div className="absolute bottom-1 right-3 text-black font-semibold text-l px-3 py-1 rounded">
+        ${price}/hour
       </div>
     </div>
   );
