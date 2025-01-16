@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import CarCard from './CarCard.tsx';
 import { setSelectedCar } from '../redux/carSlice.ts';
+import { RootState } from '../redux/store.ts';
 
 interface Car {
   id: number;
@@ -23,6 +24,7 @@ interface Car {
 const CarList: React.FC = () => {
   const [cars, setCars] = useState<Car[]>([]);
   const dispatch = useDispatch();
+  const selectedColor = useSelector((state: RootState) => state.filters.selectedColor);
 
   useEffect(() => {
     const fetchCars = async () => {
@@ -38,23 +40,26 @@ const CarList: React.FC = () => {
     dispatch(setSelectedCar(car));
   };
 
+  const filteredCars = selectedColor
+    ? cars.filter((car) => car.color.toLowerCase() === selectedColor.toLowerCase())
+    : cars;
+
   return (
     <div className="flex flex-col">
       <div className="flex justify-between items-center mb-4">
         <span className="text-xl font-semibold text-gray-800 dark:text-white">
-          {cars.length} cars to rent
+          {filteredCars.length} cars to rent
         </span>
         <a
-        href="/view-all"
-        className="text-blue-500 hover:underline text-sm"
-      >
-        View all
-      </a>
-        
+          href="/view-all"
+          className="text-blue-500 hover:underline text-sm"
+        >
+          View all
+        </a>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-        {cars.map((car) => (
+        {filteredCars.map((car) => (
           <CarCard
             key={car.id}
             {...car}
