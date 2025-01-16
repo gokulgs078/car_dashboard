@@ -19,9 +19,9 @@ const Filters: React.FC = () => {
   };
 
   return (
-    <div className="py-2 bg-white rounded-lg shadow-md w-[350px]">
+    <div className="py-2 accent-blue-500 bg-white rounded-lg shadow-md w-[350px]">
       <div className="flex justify-between items-center">
-        <h3 className="text-lg font-bold text-gray-800 dark:text-white">Filters</h3>
+        <h3 className="text-lg font-bold text-gray-800 dark:text-dark">Filters</h3>
         <button
           onClick={resetFilters}
           className="text-blue-500 hover:text-blue-700 text-sm font-semibold"
@@ -34,7 +34,7 @@ const Filters: React.FC = () => {
         <div className="flex space-x-4">
           <label className="block w-full">
             <span className="text-gray-600 dark:text-gray-400"></span>
-            <select className="w-full mt-1 p-2 border rounded">
+            <select className="w-full mt-1 p-2 accent-blue-500 border rounded">
               <option>Alfa Romeo</option>
               <option>BMW</option>
               <option>Audi</option>
@@ -42,7 +42,7 @@ const Filters: React.FC = () => {
           </label>
           <label className="block w-full">
             <span className="text-gray-600 dark:text-gray-400"></span>
-            <select className="w-full mt-1 p-2 border rounded">
+            <select className="w-full mt-1 p-2 accent-blue-500 border rounded">
               <option>Giulia</option>
               <option>Q4</option>
               <option>Quadrifoglio</option>
@@ -55,7 +55,7 @@ const Filters: React.FC = () => {
           <div className="grid grid-cols-3 gap-4">
             {['Sedan', 'Van', 'Pickup', 'Wagon', 'Minivan', 'Coupe'].map((type) => (
               <label key={type} className="flex items-center">
-                <input type="checkbox" className="mr-2" /> {type}
+                <input type="checkbox" className="mr-2 accent-blue-500" /> {type}
               </label>
             ))}
           </div>
@@ -63,7 +63,7 @@ const Filters: React.FC = () => {
 
         <div>
           <label className="block text-black font-semibold">Color</label>
-          <div className="grid grid-cols-3 gap-4 mt-2">
+          <div className="grid grid-cols-3 gap-4 mt-2 accent-blue-500">
             {[
               { color: 'Black', hex: '#000' },
               { color: 'Silver', hex: '#c0c0c0' },
@@ -72,11 +72,11 @@ const Filters: React.FC = () => {
               { color: 'Grey', hex: '#808080' },
               { color: 'Brown', hex: '#8b4513' },
             ].map(({ color, hex }) => (
-              <div key={color} className="flex items-center space-x-2">
+              <div key={color} className="flex items-center space-x-2 accent-blue-500">
                 <label
                   onClick={() => handleColorClick(color)}
                   className={`flex items-center justify-center w-4 h-4 rounded-full border cursor-pointer ${
-                    selectedColor === color ? 'ring-2 ring-blue-500' : ''
+                    selectedColor === color ? 'ring-2 accent-blue-500 ring-blue-500' : ''
                   }`}
                   style={{ backgroundColor: hex }}
                 ></label>
@@ -110,26 +110,26 @@ const Filters: React.FC = () => {
 
         <div>
           <label className="block text-black font-semibold">Rental Type</label>
-          <div className="flex gap-4 mt-2">
-            <button className="px-1 py-2 border rounded hover:bg-blue-600 hover:text-white">
+          <div className="flex gap-4 mt-2 accent-blue-500">
+            <button className="px-1 py-2 accent-blue-500 border rounded hover:bg-blue-600 hover:text-white">
               Any
             </button>
-            <button className="px-1 py-2 border rounded hover:bg-blue-600 hover:text-white">
+            <button className="px-1 py-2 accent-blue-500 border rounded hover:bg-blue-600 hover:text-white">
               Per Day
             </button>
-            <button className="px-1 py-2 bg-blue-500 text-white rounded">Per Hour</button>
+            <button className="px-1 py-2 accent-blue-500 bg-blue-500 text-white rounded">Per Hour</button>
           </div>
         </div>
 
         <div>
           <label className="block text-black font-semibold">Car Insurance</label>
-          <div className="grid grid-cols-2 gap-x-4 mt-2">
+          <div className="grid grid-cols-2 accent-blue-500 gap-x-4 mt-2 accent-blue-500">
   <label className="flex items-center whitespace-nowrap">
-    <input type="checkbox" className="mr-2" /> Collision Damage Waiver
+    <input type="checkbox" className="mr-2 accent-blue-500" /> Collision Damage Waiver
   </label>
   <div className="ml-14">
   <label className="flex items-center whitespace-nowrap">
-    <input type="checkbox" className="mr-2" /> Roadside Plus
+    <input type="checkbox" className="mr-2 accent-blue-500" /> Roadside Plus
   </label>
   </div>
 </div>
@@ -137,6 +137,21 @@ const Filters: React.FC = () => {
 
         </div>
       </div>
+      <div className="mt-16 ml-28  flex items-center justify-start">
+    <button className="text-blue-500 font-medium flex items-center">
+      All insurance
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={2}
+        stroke="currentColor"
+        className="w-4 h-4 ml-1"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+  </div>
     </div>
   );
 };

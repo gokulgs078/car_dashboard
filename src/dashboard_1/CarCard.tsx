@@ -5,49 +5,29 @@ interface CarCardProps {
   make: string;
   model: string;
   year: number;
-  color: string;
-  mileage: number;
   price: number;
-  fuelType: string;
-  transmission: string;
-  engine: string;
-  horsepower: number;
-  features: string[];
-  owners: number;
   image: string;
-  onClick?: () => void;
+  onClick: () => void;
 }
 
-const CarCard: React.FC<CarCardProps> = ({
-  make,
-  model,
-  year,
-  price,
-  image,
-  onClick,
-}) => {
+const CarCard: React.FC<CarCardProps> = ({ make, model, year, price, image, onClick }) => {
   return (
     <div
+      className="flex flex-col border border-gray-200 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow cursor-pointer"
       onClick={onClick}
-      className="relative border rounded-lg shadow-md p-2 bg-orange-200 dark:bg-gray-800 h-[200px] cursor-pointer hover:scale-105 transition-transform"
     >
-      
       <img
-        src={image || '/default-car.jpg'}
+        src={image}
         alt={`${make} ${model}`}
-        className="w-full h-[130px] object-cover rounded-md"
+        className="w-full h-28 object-cover rounded-md mb-4"
       />
-
-      
-      <div className="mt-3">
-        <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 truncate">
-          {make} {model}, {year}
-        </h3>
-      </div>
-
-      
-      <div className="absolute bottom-1 right-3 text-black font-semibold text-l px-3 py-1 rounded">
-        ${price}/hour
+      <div className="flex justify-between items-center text-lg text-gray-700 mb-2">
+        <div className="truncate w-2/3 text-sm sm:text-sm lg:text-lg font-semibold text-gray-900 dark:text-white">
+          <span className="font-medium">{`${make} ${model} ${year}`}</span>
+        </div>
+        <div className="w-1/3 text-right md:whitespace-normal md:break-words md:text-xs">
+          <span className="text-sm sm:text-sm lg:text-lg font-semibold text-gray-900 dark:text-white">${price}/hour</span>
+        </div>
       </div>
     </div>
   );
