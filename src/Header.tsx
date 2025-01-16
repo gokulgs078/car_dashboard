@@ -16,7 +16,7 @@ const Header: React.FC = () => {
       <div className="flex items-center space-x-4">
         
         <button
-          className="md:hidden text-gray-800 dark:text-white"
+          className="md:hidden bg-black text-white p-2 rounded hover:bg-gray-700"
           onClick={handleSidebarToggle}
         >
           <FaBars size={24} />
@@ -30,11 +30,11 @@ const Header: React.FC = () => {
         <div className="absolute left-1/2 -translate-x-1/2">
           <ThemeToggler />
         </div>
-        <div className="text-gray-800 dark:text-white">New York, US</div>
+        <div className="hidden md:block text-gray-800 dark:text-white">New York, US</div>
         <div className="flex items-center space-x-2">
           <img
             src="https://via.placeholder.com/32"
-            alt="User profile"
+            // alt="User profile"
             className="rounded-full"
           />
           <span className="text-gray-800 dark:text-white">Nancy Holloway</span>

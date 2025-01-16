@@ -44,6 +44,13 @@ const CarList: React.FC = () => {
         <span className="text-xl font-semibold text-gray-800 dark:text-white">
           {cars.length} cars to rent
         </span>
+        <a
+        href="/view-all"
+        className="text-blue-500 hover:underline text-sm"
+      >
+        View all
+      </a>
+        
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">

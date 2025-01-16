@@ -8,7 +8,7 @@ import { RootState } from './redux/store.ts';
 
 const MainContainer: React.FC = () => {
   const isSidebarOpen = useSelector((state: any) => state.sidebar.isSidebarOpen);
-  const selectedCar = useSelector((state: RootState) => state.car.selectedCar); // Get selected car
+  const selectedCar = useSelector((state: RootState) => state.car.selectedCar); 
 
   return (
     <div className="flex flex-col bg-gray-100 dark:bg-gray-900 min-h-screen">
