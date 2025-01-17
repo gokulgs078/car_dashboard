@@ -8,7 +8,7 @@ interface CarImageProps {
 
 const CarImage: React.FC<CarImageProps> = ({ image, isNew, isAvailable }) => {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 h-80 relative border-solid border-2 border-red-600">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-4 h-80 relative">
       <div className="absolute top-2 left-2 flex gap-2">
         {isNew && (
           <span className="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">NEW</span>
