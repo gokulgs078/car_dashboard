@@ -19,7 +19,7 @@ const CarCard: React.FC<CarCardProps> = ({ make, model, year, price, image, onCl
       <img
         src={image}
         alt={`${make} ${model}`}
-        className="w-full h-28 object-cover rounded-md mb-4"
+        className="w-full h-32 object-cover rounded-md mb-4"
       />
       <div className="flex justify-between items-center text-lg text-gray-700 mb-2">
         <div className="truncate w-2/3 text-sm sm:text-sm lg:text-lg font-semibold text-gray-900 dark:text-white">

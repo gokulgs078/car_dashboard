@@ -19,7 +19,7 @@ const Filters: React.FC = () => {
   };
 
   return (
-    <div className="py-2 accent-blue-500 bg-white rounded-lg shadow-md w-[350px]">
+    <div className="py-2 px-2 accent-blue-500 bg-white rounded-lg shadow-md w-[350px]">
       <div className="flex justify-between items-center">
         <h3 className="text-lg font-bold text-gray-800 dark:text-dark">Filters</h3>
         <button

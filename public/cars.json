@@ -13,7 +13,7 @@
       "horsepower": 169,
       "features": ["Bluetooth", "Backup Camera", "Keyless Entry"],
       "owners": 1,
-      "image": "https://fakeimg.pl/500x500/cccccc"
+      "image": "https://i.postimg.cc/1XGffrRk/2023-toyota-prius-1.avif"
     },
     {
       "id": 2,
@@ -29,7 +29,7 @@
       "horsepower": 158,
       "features": ["Apple CarPlay", "Android Auto", "Lane Departure Warning"],
       "owners": 2,
-      "image": "https://fakeimg.pl/500x500/ffffff"
+      "image": "https://i.postimg.cc/k49r7QZ6/honda.webp"
     },
     {
         "id": 3,
@@ -49,7 +49,7 @@
             "Heated Seats"
         ],
         "owners": 1,
-        "image": "https://fakeimg.pl/500x500/ff0000"
+        "image": "https://i.postimg.cc/QtB7x7TD/l8nlora-1420637.webp"
     },
     {
         "id": 4,
@@ -69,7 +69,7 @@
             "Wi-Fi Hotspot"
         ],
         "owners": 2,
-        "image": "https://fakeimg.pl/500x500/0000ff"
+        "image": "https://i.postimg.cc/Qd4V9tsd/images-che.jpg"
     },
     {
         "id": 5,
@@ -89,7 +89,7 @@
             "Lane Keeping Assist"
         ],
         "owners": 1,
-        "image": "https://fakeimg.pl/500x500/000000"
+        "image": "https://i.postimg.cc/J4hLyQhj/nissan.jpg"
     },
     {
         "id": 6,
@@ -109,7 +109,7 @@
             "Parking Assistance"
         ],
         "owners": 1,
-        "image": "https://fakeimg.pl/500x500/ffffff"
+        "image": "https://i.postimg.cc/Twq6b7mJ/bmw.jpg"
     },
     {
         "id": 7,

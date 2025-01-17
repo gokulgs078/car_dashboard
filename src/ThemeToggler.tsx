@@ -39,7 +39,7 @@ const ThemeToggler: React.FC = () => {
       >
         <div
           className={`h-8 w-20 flex items-center justify-center text-sm font-semibold rounded-full bg-white transition-all ${
-            theme === "light" ? "ml-0 text-black" : "ml-auto text-black"
+            theme === "light" ? "ml-0 bg-white text-black" : "ml-auto bg-gray-900 text-white"
           }`}
         >
           {theme === "light" ? "Light Mode" : "Dark"}

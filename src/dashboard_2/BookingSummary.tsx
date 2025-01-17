@@ -31,9 +31,9 @@ const BookingSummary: React.FC<BookingSummaryProps> = ({ car }) => {
   if (!car) return <p className="text-center text-gray-500">No car selected.</p>;
 
   return (
-    <div className="bg-black text-white rounded-lg p-6 h-full">
-      <div className="flex justify-between mt-4">
-        <div>
+    <div className="bg-black text-white rounded-lg p-6 h-full mr-2">
+      <div className="flex flex-wrap lg:flex-nowrap justify-between mt-4 gap-4">
+        <div className="w-full md:w-1/2 lg:w-1/2">
           <p className="text-white-400">Pick-up date and time</p>
           <input
             type="datetime-local"
@@ -42,7 +42,9 @@ const BookingSummary: React.FC<BookingSummaryProps> = ({ car }) => {
             onChange={(e) => setPickup(e.target.value)}
           />
         </div>
-        <div>
+        
+        <div className="w-full md:w-1/2 lg:w-1/2 lg:ml-auto flex lg:justify-end">
+          <div>
           <p className="text-white-400">Drop-off date and time</p>
           <input
             type="datetime-local"
@@ -50,6 +52,7 @@ const BookingSummary: React.FC<BookingSummaryProps> = ({ car }) => {
             value={dropoff}
             onChange={(e) => setDropoff(e.target.value)}
           />
+          </div>
         </div>
       </div>
 
