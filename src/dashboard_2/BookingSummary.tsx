@@ -33,11 +33,11 @@ const BookingSummary: React.FC<BookingSummaryProps> = ({ car }) => {
   return (
     <div className="bg-black text-white rounded-lg p-6 h-full mr-2">
       <div className="flex flex-wrap lg:flex-nowrap justify-between mt-4 gap-4">
-        <div className="w-full md:w-1/2 lg:w-1/2">
+        <div className="w-full md:w-1/2 lg:w-1/2 lg:ml-auto">
           <p className="text-white-400">Pick-up date and time</p>
           <input
             type="datetime-local"
-            className="font-bold border border-gray-300 rounded px-2 py-1 text-white bg-gray-600"
+            className="font-bold border border-gray-300 rounded px-2 py-1 text-white bg-gray-600 max-w-[300px]"
             value={pickup}
             onChange={(e) => setPickup(e.target.value)}
           />
@@ -48,7 +48,7 @@ const BookingSummary: React.FC<BookingSummaryProps> = ({ car }) => {
           <p className="text-white-400">Drop-off date and time</p>
           <input
             type="datetime-local"
-            className="font-bold border border-gray-300 rounded px-2 py-1 text-white bg-gray-600"
+            className="font-bold border border-gray-300 rounded px-2 py-1 text-white bg-gray-600 w-full max-w-[300px]"
             value={dropoff}
             onChange={(e) => setDropoff(e.target.value)}
           />
