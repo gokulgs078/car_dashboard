@@ -19,7 +19,7 @@ const Filters: React.FC = () => {
   };
 
   return (
-    <div className="py-2 px-2 accent-blue-500 bg-white rounded-lg shadow-md w-[350px]">
+    <div className="pr-2 px-2 accent-blue-500 bg-gray-100 rounded-lg shadow-md w-[350px]">
       <div className="flex justify-between items-center">
         <h3 className="text-lg font-bold text-gray-800 dark:text-dark">Filters</h3>
         <button
@@ -127,7 +127,7 @@ const Filters: React.FC = () => {
   <label className="flex items-center whitespace-nowrap">
     <input type="checkbox" className="mr-2 accent-blue-500" /> Collision Damage Waiver
   </label>
-  <div className="ml-14">
+  <div className="ml-12">
   <label className="flex items-center whitespace-nowrap">
     <input type="checkbox" className="mr-2 accent-blue-500" /> Roadside Plus
   </label>
